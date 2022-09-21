@@ -2,15 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { LazyWrapperComponent } from './lazy-wrapper/lazy-wrapper.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent, LazyWrapperComponent],
+    imports: [BrowserModule],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
